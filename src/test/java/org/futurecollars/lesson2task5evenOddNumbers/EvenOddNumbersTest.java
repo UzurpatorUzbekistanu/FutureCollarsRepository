@@ -19,4 +19,20 @@ public class EvenOddNumbersTest {
         Assertions.assertFalse(resultOdd);
         Assertions.assertTrue(resultEven);
     }
+
+    @Test
+    public void shouldCheckisOdd(){
+//        given
+        int a = 10;
+        int b = 19;
+
+//        when
+        boolean resultEven = EvenOddNumbers.isOdd(a);
+        boolean resultOdd = EvenOddNumbers.isOdd(b);
+
+//        then
+        Assertions.assertFalse(resultEven);
+        Assertions.assertTrue(resultOdd);
+    }
+
 }

@@ -3,7 +3,9 @@ package org.futurecollars.lesson2task5evenOddNumbers;
 public class EvenOddNumbers {
 
     public static boolean isEven (int a) {
-        if ((a % 2 == 0)) return true;
-        else return false;
+        return a % 2 == 0;
+    }
+    public static boolean isOdd (int a){
+        return !(a % 2 == 0);
     }
 }
