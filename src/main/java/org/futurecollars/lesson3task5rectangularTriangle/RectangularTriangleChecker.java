@@ -4,7 +4,6 @@ public class RectangularTriangleChecker {
 
     public static boolean isRectangularTriangle (int side1, int side2, int side3){
 
-        Math.pow(side1,2);
         int hypotenuse, a, b;
         if (side1 > side2 && side1 > side3){
             hypotenuse = side1;
