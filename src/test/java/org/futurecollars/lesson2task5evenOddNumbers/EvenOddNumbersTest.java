@@ -6,33 +6,51 @@ import org.junit.jupiter.api.Assertions;
 public class EvenOddNumbersTest {
 
     @Test
-    public void shouldCheckIsEven (){
+    public void shouldReturnFalseWithMethodIsEven (){
 //        given
-        int a = 199;
-        int b = 100;
+        int number = 199;
 
 //        when
-        boolean resultOdd = EvenOddNumbers.isEven(a);
-        boolean resultEven = EvenOddNumbers.isEven(b);
+        boolean result = EvenOddNumbers.isEven(number);
 
 //        then
-        Assertions.assertFalse(resultOdd);
-        Assertions.assertTrue(resultEven);
+        Assertions.assertFalse(result);
+    }
+    @Test
+    public void shouldReturnTrueWithMethodIsEven () {
+//        given
+        int number = 200;
+//        when
+        boolean result = EvenOddNumbers.isEven(number);
+
+//        then
+        Assertions.assertTrue(result);
+
     }
 
     @Test
-    public void shouldCheckisOdd(){
+    public void shouldReturnTrueWithMethodIsOdd(){
 //        given
-        int a = 10;
-        int b = 19;
+        int number = 19;
 
 //        when
-        boolean resultEven = EvenOddNumbers.isOdd(a);
-        boolean resultOdd = EvenOddNumbers.isOdd(b);
+        boolean result = EvenOddNumbers.isOdd(number);
 
 //        then
-        Assertions.assertFalse(resultEven);
-        Assertions.assertTrue(resultOdd);
+
+        Assertions.assertTrue(result);
+    }
+
+    @Test
+    public void shouldReturnFalseWithMethodIsOdd(){
+//        given
+        int number = 22;
+
+//        when
+        boolean result = EvenOddNumbers.isOdd(number);
+
+//        then
+        Assertions.assertFalse(result);
     }
 
 }
