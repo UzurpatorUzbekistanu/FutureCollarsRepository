@@ -1,11 +1,16 @@
 package org.futurecollars.lesson3task3cinemaWorkers;
 
 public class Manager extends BaseEmployee{
-    private static final int baseSalary = 5000;
-    private static int monthlyBonus = 500;
+    private int baseSalary = 5000;
+    private int monthlyBonus = 500;
 
     public Manager(String name, String surname, int yearOfEmployment) {
         super(name, surname, yearOfEmployment);
+    }
+
+    @Override
+    public void setBaseSalary(int baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
     @Override
@@ -16,11 +21,11 @@ public class Manager extends BaseEmployee{
     public int getBaseSalary(){
         return baseSalary;
     }
-    public static int getMonthlyBonus() {
-        return monthlyBonus;
+    public int getMonthlyBonus() {
+        return this.monthlyBonus;
     }
-    public static void setMonthlyBonus(int valueOfBonus){
-        monthlyBonus = valueOfBonus;
+    public void setMonthlyBonus(int valueOfBonus){
+        this.monthlyBonus = valueOfBonus;
     }
 
 

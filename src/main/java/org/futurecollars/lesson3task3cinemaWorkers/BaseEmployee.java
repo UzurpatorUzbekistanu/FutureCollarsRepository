@@ -4,19 +4,21 @@ public abstract class BaseEmployee {
     private String name;
     private String surname;
     private int yearOfEmployment;
-    private int seniority;
+    private int baseSalary = 3000;
 
     public BaseEmployee(String name, String surname, int yearOfEmployment) {
         this.name = name;
         this.surname = surname;
         this.yearOfEmployment = yearOfEmployment;
-        this.seniority = 2024 - yearOfEmployment;
     }
 
     public abstract int calculateMonthlySalary();
 
     public abstract int getBaseSalary();
 
+    public void setBaseSalary(int baseSalary) {
+        this.baseSalary = baseSalary;
+    }
 
     public String getName() {
         return name;
@@ -30,4 +32,10 @@ public abstract class BaseEmployee {
     public int getYearOfEmployment() {
         return yearOfEmployment;
     }
+
+    public int getSeniority(){
+        return 2024 - yearOfEmployment;
+    }
 }
+
+
