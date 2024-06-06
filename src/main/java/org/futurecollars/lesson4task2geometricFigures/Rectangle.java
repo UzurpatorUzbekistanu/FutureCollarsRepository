@@ -1,21 +1,30 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
-public class Rectangle extends Shape {
 
-    double sideFirst, sideSecond;
+class Rectangle extends Shape{
+    private double width;
+    private double height;
 
-    Rectangle(double sideFirst, double sideSecond){
-        this.sideFirst = sideFirst;
-        this.sideSecond = sideSecond;
+    Rectangle(double width, double height){
+        this.height = height;
+        this.width = width;
     }
-
+    
     @Override
     double getArea() {
-        return sideFirst * sideSecond;
+        return height * width;
     }
 
     @Override
     double getPerimeter() {
-        return sideFirst * 2 + sideSecond * 2;
+        return 2 * height + 2 * width;
+    }
+
+    double getWidth() {
+        return width;
+    }
+
+    double getHeight() {
+        return height;
     }
 }

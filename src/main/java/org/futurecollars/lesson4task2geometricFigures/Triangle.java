@@ -1,9 +1,10 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
 public class Triangle extends Shape{
-    double sideFirst;
-    double sideSecond;
-    double sideThird;
+
+    private double sideFirst;
+    private double sideSecond;
+    private double sideThird;
 
     public Triangle(double sideFirst, double sideSecond, double sideThird) {
         this.sideFirst = sideFirst;
@@ -16,10 +17,12 @@ public class Triangle extends Shape{
         double halfPerimeter = getPerimeter()/2;
         return Math.sqrt(halfPerimeter * (halfPerimeter - sideFirst) * (halfPerimeter - sideSecond) *
                 (halfPerimeter - sideThird));
+
     }
 
     @Override
     double getPerimeter() {
         return sideFirst + sideSecond + sideThird;
+
     }
 }

@@ -1,10 +1,11 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
-public class Circle extends Shape{
 
-    double radius;
+class Circle extends Shape{
 
-    public Circle(double radius) {
+    private double radius;
+
+    Circle(double radius) {
         this.radius = radius;
     }
 
@@ -17,4 +18,9 @@ public class Circle extends Shape{
     double getPerimeter() {
         return 2 * Math.PI * radius;
     }
+
+    double getRadius() {
+        return radius;
+    }
+
 }

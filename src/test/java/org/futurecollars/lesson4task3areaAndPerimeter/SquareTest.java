@@ -1,4 +1,4 @@
-package org.futurecollars.lesson4task2geometricFigures;
+package org.futurecollars.lesson4task3areaAndPerimeter;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -6,13 +6,12 @@ import org.junit.jupiter.api.Assertions;
 public class SquareTest {
 
     @Test
-
     public void shouldReturnArea(){
 //        given
         Square square = new Square(3.0);
 
 //        when
-        double area = square.getArea();
+        double area = square.area();
 
 //        then
         Assertions.assertEquals(9, area);
@@ -24,10 +23,9 @@ public class SquareTest {
         Square square = new Square(3.0);
 
 //        when
-        double perimeter = square.getPerimeter();
+        double perimeter = square.perimeter();
 
 //        then
         Assertions.assertEquals(12, perimeter);
-
     }
 }

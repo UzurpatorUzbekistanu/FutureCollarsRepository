@@ -1,17 +1,16 @@
-package org.futurecollars.lesson4task2geometricFigures;
+package org.futurecollars.lesson4task3areaAndPerimeter;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 public class RectangleTest {
 
-
     public void shouldReturnArea(){
 //        given
         Rectangle rectangle = new Rectangle(3.0, 4.0);
 
 //        when
-        double area = rectangle.getArea();
+        double area = rectangle.area();
 
 //        then
         Assertions.assertEquals(12, area);
@@ -23,10 +22,9 @@ public class RectangleTest {
         Rectangle rectangle = new Rectangle(3.0, 4.0);
 
 //        when
-        double perimeter = rectangle.getPerimeter();
+        double perimeter = rectangle.perimeter();
 
 //        then
         Assertions.assertEquals(14, perimeter);
     }
-
 }

@@ -1,18 +1,27 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
-public class Square extends Rectangle{
+
+class Square extends Rectangle{
+    double side;
+
 
     Square(double side) {
         super(side, side);
+        this.side = side;
     }
 
     @Override
-    double getArea() {
-        return super.getArea();
+    double getArea(){
+        return Math.pow(side, 2);
     }
 
     @Override
-    double getPerimeter() {
-        return super.getPerimeter();
+    double getPerimeter(){
+        return 4 * side;
     }
+
+    double getSide() {
+        return side;
+    }
+
 }
