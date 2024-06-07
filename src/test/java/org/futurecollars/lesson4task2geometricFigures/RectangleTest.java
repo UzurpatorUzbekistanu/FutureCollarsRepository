@@ -5,32 +5,28 @@ import org.junit.jupiter.api.Assertions;
 
 public class RectangleTest {
 
-    @Test
-    public void  shouldGiveArea(){
 
-        //         given
-        Rectangle rectangle = new Rectangle(5.3, 6.3);
+    public void shouldReturnArea(){
+//        given
+        Rectangle rectangle = new Rectangle(3.0, 4.0);
 
 //        when
-        double result = rectangle.getArea();
+        double area = rectangle.getArea();
 
 //        then
-        Assertions.assertEquals(33.390000000000001, result);
+        Assertions.assertEquals(12, area);
     }
 
     @Test
-    public void  shouldGivePerimeter(){
+    public void shouldReturnPerimeter(){
+//        given
+        Rectangle rectangle = new Rectangle(3.0, 4.0);
 
-        //         given
-        Rectangle rectangle = new Rectangle(5.3, 6.3);
-
-        //        when
-        double result = rectangle.getArea();
+//        when
+        double perimeter = rectangle.getPerimeter();
 
 //        then
-        Assertions.assertEquals(33.39, result);
+        Assertions.assertEquals(14, perimeter);
     }
-
-
 
 }

@@ -1,28 +1,28 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
 public class Triangle extends Shape{
-    private double side1;
-    private double side2;
-    private double baseOfTriangle;
-    private double height;
 
-    public Triangle(double side1, double side2, double baseOfTriangle, double height) {
-        this.side1 = side1;
-        this.side2 = side2;
-        this.baseOfTriangle = baseOfTriangle;
-        this.height = height;
+    private double sideFirst;
+    private double sideSecond;
+    private double sideThird;
+
+    public Triangle(double sideFirst, double sideSecond, double sideThird) {
+        this.sideFirst = sideFirst;
+        this.sideSecond = sideSecond;
+        this.sideThird = sideThird;
     }
-
-
 
     @Override
     double getArea() {
-        return 0.5 * baseOfTriangle * height;
+        double halfPerimeter = getPerimeter()/2;
+        return Math.sqrt(halfPerimeter * (halfPerimeter - sideFirst) * (halfPerimeter - sideSecond) *
+                (halfPerimeter - sideThird));
+
     }
 
     @Override
     double getPerimeter() {
+        return sideFirst + sideSecond + sideThird;
 
-        return side1 + side2 + baseOfTriangle;
     }
 }

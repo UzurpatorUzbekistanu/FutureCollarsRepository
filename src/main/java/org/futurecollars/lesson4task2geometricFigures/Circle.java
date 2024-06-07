@@ -1,5 +1,6 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
+
 class Circle extends Shape{
 
     private double radius;
@@ -7,7 +8,6 @@ class Circle extends Shape{
     Circle(double radius) {
         this.radius = radius;
     }
-
 
     @Override
     double getArea() {
@@ -22,4 +22,5 @@ class Circle extends Shape{
     double getRadius() {
         return radius;
     }
+
 }

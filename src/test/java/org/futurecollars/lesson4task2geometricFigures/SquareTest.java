@@ -6,26 +6,28 @@ import org.junit.jupiter.api.Assertions;
 public class SquareTest {
 
     @Test
-    public void  shouldGiveArea(){
-        //         given
-        Square square = new Square(5.3);
+
+    public void shouldReturnArea(){
+//        given
+        Square square = new Square(3.0);
 
 //        when
-        double result = square.getArea();
+        double area = square.getArea();
 
 //        then
-        Assertions.assertEquals(28.09, result);
+        Assertions.assertEquals(9, area);
     }
 
     @Test
-    public void  shouldGivePerimeter(){
-        //         given
-        Square square = new Square(5.3);
+    public void shouldReturnPerimeter(){
+//        given
+        Square square = new Square(3.0);
 
 //        when
-        double result = square.getPerimeter();
+        double perimeter = square.getPerimeter();
 
 //        then
-        Assertions.assertEquals(21.2, result);
+        Assertions.assertEquals(12, perimeter);
+
     }
 }

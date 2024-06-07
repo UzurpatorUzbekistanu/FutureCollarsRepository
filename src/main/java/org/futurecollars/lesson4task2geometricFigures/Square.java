@@ -1,5 +1,6 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
+
 class Square extends Rectangle{
     double side;
 

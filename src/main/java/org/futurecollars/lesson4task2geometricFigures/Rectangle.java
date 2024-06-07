@@ -1,5 +1,6 @@
 package org.futurecollars.lesson4task2geometricFigures;
 
+
 class Rectangle extends Shape{
     private double width;
     private double height;
@@ -8,9 +9,7 @@ class Rectangle extends Shape{
         this.height = height;
         this.width = width;
     }
-
-
-
+    
     @Override
     double getArea() {
         return height * width;
