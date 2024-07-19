@@ -9,7 +9,9 @@ public class TraingleTest {
     public void  shouldGiveArea(){
 
         //         given
-        Triangle triangle = new Triangle(5.0, 6.0, 7.0 );
+
+        Triangle triangle = new Triangle(5.0, 6.0, 7.0);
+
 
 //        when
         double result = triangle.getArea();
@@ -22,7 +24,9 @@ public class TraingleTest {
     public void  shouldGivePerimeter(){
 
         //         given
-        Triangle triangle = new Triangle(5.0, 6.0, 7.0 );
+
+        Triangle triangle = new Triangle(5.0, 6.0, 7.0);
+
 
 //        when
         double result = triangle.getPerimeter();
