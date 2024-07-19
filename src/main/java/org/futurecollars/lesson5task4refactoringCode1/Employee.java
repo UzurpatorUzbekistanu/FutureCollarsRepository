@@ -44,7 +44,7 @@ public class Employee {
     }
 
     public String getEmployeeFullNameAndAge() {
-        return "Employee details : " + name + " " + surname + " is " + age;
+        return "Employee details: " + name + " " + surname + " is " + age;
     }
 
     public BigDecimal getTotalSalary() {
