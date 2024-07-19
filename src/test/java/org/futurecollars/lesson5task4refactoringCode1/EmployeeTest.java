@@ -14,7 +14,7 @@ class EmployeeTest {
         String employeeFullName = employee.getEmployeeFullName();
         //then
         Assertions.assertNotNull(employeeFullName);
-        Assertions.assertEquals("Employee name : John Smith", employeeFullName);
+        Assertions.assertEquals("Employee name: John Smith", employeeFullName);
     }
 
     @Test
@@ -25,7 +25,7 @@ class EmployeeTest {
         String employeeFullNameAndAge = employee.getEmployeeFullNameAndAge();
         //then
         Assertions.assertNotNull(employeeFullNameAndAge);
-        Assertions.assertEquals("Employee details: John Smith is 45", employeeFullNameAndAge);
+        Assertions.assertEquals("Employee details : John Smith is 45", employeeFullNameAndAge);
     }
 
 
