@@ -10,7 +10,7 @@ public class TextProofreader {
         if(isHavingSigns(text)){
             return text.length();
         } else {
-            throw new EmptyTextException("Tekst jest pusty. Proszę podać prawidłowy tekst.");
+            throw new EmptyTextException("Text is empty. Please enter valid text.");
         }
     }
 
@@ -28,5 +28,16 @@ public class TextProofreader {
         }
         return true;
     }
+
+    void processText(String text) {
+        if (isHavingSigns(text)) {
+            System.out.println("Text contains characters.");
+            System.out.println("Is the text a palindrome? " + isPalindrome(text));
+            System.out.println("Text length: " + textLength(text));
+        } else {
+            throw new EmptyTextException("Text is empty. Please enter valid text.");
+        }
+    }
+
 
 }
