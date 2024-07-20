@@ -2,23 +2,19 @@ package org.futurecollars.lesson5task3boostedCalculator;
 
 public class Calculator {
 
-        public static double add(double a, double b) {
-            return a + b;
-        }
-
-        public static double subtract(double a, double b) {
-            return a - b;
-        }
-
-        public static double multiply(double a, double b) {
-            return a * b;
-        }
-
-        public static double divide(double a, double b) {
-            if (b == 0) {
-                throw new ArithmeticException("Division by zero is not justified.");
-            }
-            return a / b;
-        }
-
+    public double calculate(Operation operation, double a, double b) {
+        return operation.execute(a, b);
     }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        
+        double a = 10;
+        double b = 5;
+
+        System.out.println("Addition: " + calculator.calculate(new Addition(), a, b));
+        System.out.println("Subtraction: " + calculator.calculate(new Subtraction(), a, b));
+        System.out.println("Multiplication: " + calculator.calculate(new Multiplication(), a, b));
+        System.out.println("Division: " + calculator.calculate(new Division(), a, b));
+    }
+}
