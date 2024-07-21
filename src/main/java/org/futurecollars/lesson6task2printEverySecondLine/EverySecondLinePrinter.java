@@ -8,7 +8,6 @@ import java.util.List;
 public class EverySecondLinePrinter {
 
     static void printEverySecondLineDataFile(){
-        String text = null;
         try {
             int rowNumber = 1;
             List<String> textLines = Files.readAllLines(Path.of("FutureCollarsRepository\\src\\main\\java\\org\\futurecollars\\lesson6task2printEverySecondLine\\input\\data.txt"));
