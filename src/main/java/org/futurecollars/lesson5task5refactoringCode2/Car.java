@@ -1,26 +1,25 @@
 package org.futurecollars.lesson5task5refactoringCode2;
 
-public class Car extends Vehicle {
+public class Car implements Vehicle {
+    private Engine engine;
 
-    private boolean engineStarted;
-
-    protected void startEngine() {
-        if (!engineStarted) {
-            engineStarted = true;
-        }
+    public Car() {
+        this.engine = new Engine();
     }
 
-    protected void stopEngine() {
-        if (engineStarted) {
-            engineStarted = false;
-        }
+    @Override
+    public void start() {
+        engine.start();
+        System.out.println("Car engine started.");
+    }
+
+    @Override
+    public void stop() {
+        engine.stop();
+        System.out.println("Car engine stopped.");
     }
 
     public boolean isEngineStarted() {
-        return engineStarted;
-    }
-
-    public void setEngineStarted(boolean engineStarted) {
-        this.engineStarted = engineStarted;
+        return engine.isEngineStarted();
     }
 }
