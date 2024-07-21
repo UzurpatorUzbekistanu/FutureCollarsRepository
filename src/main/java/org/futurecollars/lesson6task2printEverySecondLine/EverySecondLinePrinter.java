@@ -1,9 +1,6 @@
 package org.futurecollars.lesson6task2printEverySecondLine;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -19,6 +16,7 @@ public class EverySecondLinePrinter {
                 if (rowNumber % 2 == 0){
                     System.out.println(line);
                 }
+                rowNumber ++;
             }
         } catch (IOException exception) {
             exception.printStackTrace();
