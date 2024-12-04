@@ -24,7 +24,6 @@ public class TraingleTest {
     public void  shouldGivePerimeter(){
 
         //         given
-
         Triangle triangle = new Triangle(5.0, 6.0, 7.0);
 
 
